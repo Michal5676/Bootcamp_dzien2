@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "bootcamp_dzien2_backend": {
+      "candid": "src/bootcamp_dzien2_backend/bootcamp_dzien2_backend.did",
+      "package": "bootcamp_dzien2_backend",
+      "type": "rust"
+    },
+    "bootcamp_dzien2_frontend": {
+      "dependencies": [
+        "bootcamp_dzien2_backend"
+      ],
+      "source": [
+        "src/bootcamp_dzien2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "bootcamp_dzien2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
